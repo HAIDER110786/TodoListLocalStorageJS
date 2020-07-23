@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.outerDiv{
+    background-image: url(../assets/codingWallPaper.jpg);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.innerDiv{
+    background-color: rgb(220, 220, 220);
+    min-height:150px;
+    min-width: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding: 0px 30px;
+    padding-top: 40px;
+    justify-content:flex-start;
+}
+
+.innerDiv>*>*{
+    margin: 0px;
+}
+
+.innerDiv>*{
+    margin-bottom:40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.input{
+    flex-direction: row;
+    justify-content:space-around;   
+}
+
+.input input{
+    flex: 1;
+    border: none;
+    margin-right: 5px;
+    background-color:transparent;
+    border-bottom: 1px solid black;
+    padding:10px 3px;
+    font-size: 15px;
+}
+
+.input button{
+    border: none;
+    height: 35px;
+    width: 60px;
+    background-color:cornflowerblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.todoItem input{
+    margin-top: 2.5px;
+    margin-right: 5px;
+}
+
+.todoItem{
+    display:flex;
+    width: 100%;
+    margin: 10px;
+    background-color: darkgrey;
+    padding: 15px;
+    border-radius:10px;
+}
+
+.todoItem:hover{
+    opacity:0.75;
+    cursor:pointer;
+}
+
+.todoItem>*{
+    margin: 0;
+}
+
+.alert{
+    padding: 10px;
+    background-color:pink;
+    width: fit-content;
+    color: white;
+}
+
+.alert-info{
+    background-color:blue
+}
+
+.alert-warning{
+    background-color:yellow;
+    color: black;
+}
+
+.alert-success{
+    background-color:greenyellow;
+    color: black;
+}
+
+.alert-danger{
+    background-color:red;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom:20px;
+    justify-content:space-around;
+}
+
+.buttons button{
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
